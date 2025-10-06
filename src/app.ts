@@ -27,7 +27,7 @@ class CadastroPacientes {
 
     adicionarPaciente(paciente: Paciente) {
         if (!paciente.especialidadeValida()) {
-            alert("Especialidade indisponível!");
+            alert("Vagas Indisponíveis!");
             return;
         }
 

@@ -18,7 +18,7 @@ class CadastroPacientes {
     }
     adicionarPaciente(paciente) {
         if (!paciente.especialidadeValida()) {
-            alert("Especialidade indisponível!");
+            alert("Vagas Indisponíveis!");
             return;
         }
         this.pacientes.push(paciente);
