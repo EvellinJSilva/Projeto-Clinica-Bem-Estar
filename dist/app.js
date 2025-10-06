@@ -7,7 +7,7 @@ class Paciente {
         this.especialidade = especialidade;
     }
     especialidadeValida() {
-        const especialidades = ["Neurologia", "Pediatria", "Cardiologia", "Dermatologia"];
+        const especialidades = ["Cardiologia", "Dermatologia"];
         return especialidades.includes(this.especialidade);
     }
 }
@@ -18,7 +18,7 @@ class CadastroPacientes {
     }
     adicionarPaciente(paciente) {
         if (!paciente.especialidadeValida()) {
-            alert("Especialidade inválida!");
+            alert("Especialidade indisponível!");
             return;
         }
         this.pacientes.push(paciente);
